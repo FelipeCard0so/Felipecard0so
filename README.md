@@ -11,6 +11,13 @@
 - 😄 Pronomes: ...
 - ⚡ Curiosidade: Sou, Biólogo formado, Designer Gráfico, Téc. em Manutenção de Micro, já morei na Irlanda, e ja estive em mais 4 paises. 
 
+selecao-bordas, .selecao-details {
+    overflow: auto;
+}
+.content {
+    display: inline-block;
+}
+
 <div class="container align="center">
   
 <a href="https://github.com/FelipeCard0so">
