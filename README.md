@@ -15,7 +15,7 @@
   
   <a href="https://github.com/FelipeCard0so">
   <img height="220em" src="https://github-readme-stats.vercel.app/api?username=FelipeCard0so&show_icons=true&theme=gruvbox&include_all_commits=true&count_private=true"/>
-  <img height="190em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FelipeCard0so&layout=compact&langs_count=7&theme=gruvbox"/>
+  <img height="186em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FelipeCard0so&layout=compact&langs_count=7&theme=gruvbox"/>
 </div>
   
   <div style="display: inline_block"><br>
