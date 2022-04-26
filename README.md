@@ -10,8 +10,7 @@
 - 📫 felipe.myb@gmail.com
 - ⚡ Curiosidade: Sou, Biólogo formado, Designer Gráfico, Téc. em Manutenção de Micro, já morei na Irlanda, e ja estive em mais 4 paises. 
 
- 💻
-
+ 
 <div align="left">
   
 <a href="https://github.com/FelipeCard0so">
