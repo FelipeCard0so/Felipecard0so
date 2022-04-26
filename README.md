@@ -1,6 +1,6 @@
 
 ### Olá, Meu nome é Felipe Cardoso e estou iniciando minha vida como Dev Python, estou muito empolgado! 👋
-😎
+ 
 - 🔭 Atualmente estou trabalhando em telecomunicações.
 - 🌱 Estou aprendendo Python (por enquanto...)
 - 💻 Estou procurando colaborar em Python
