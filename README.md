@@ -1,13 +1,12 @@
 
 ### Olá, Meu nome é Felipe Cardoso e estou iniciando minha vida como Dev Python, estou muito empolgado! 👋
  
-- 🔭 Atualmente estou trabalhando em telecomunicações.
+- 🔭 Atualmente estou em transição de carreira para Programador (2024).
 - 🌱 Estou aprendendo Python (por enquanto...)
-- 💻 Estou procurando colaborar em Python
+- 💻 only Python
 - 🤔 Toda ajuda será muito bem vinda, e conte comigo também...
-- 💬 deixe uma pergunta ai...
 - 📫 felipe.myb@gmail.com
-- ⚡ Curiosidade: Sou, Biólogo formado, Designer Gráfico, Téc. em Manutenção de Micro, já morei na Irlanda, e ja estive em mais 4 paises. 
+- ⚡ Sou, Biólogo formado, Designer Gráfico, Téc. em Manutenção de Micro, já morei na Irlanda, e ja estive em mais 4 paises. 
 
  
 <div align="left">
@@ -30,6 +29,7 @@
   <a href = "mailto:felipe@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
   <a href="https://www.linkedin.com/in/cardosofelipe/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   
+   
    ![Snake animation](https://github.com/FelipeCard0so/FelipeCard0so/blob/output/github-contribution-grid-snake.svg)
   
 </div>
