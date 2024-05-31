@@ -3,7 +3,6 @@
  
 - 🔭 Atualmente estou em transição de carreira para Programador (2024).
 - 🌱 Estou aprendendo Python (por enquanto...)
-- 💻 only Python
 - 🤔 Toda ajuda será muito bem vinda, e conte comigo também...
 - 📫  felipe.myb@gmail.com
 - ⚡ Sou, Biólogo formado, Designer Gráfico, Téc. em Manutenção de Micro, já morei na Irlanda, e ja estive em mais 4 paises. 
