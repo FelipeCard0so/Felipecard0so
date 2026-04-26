@@ -13,11 +13,11 @@
   <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FelipeCard0so&layout=compact&langs_count=7&theme=merko"/>
 </a>
 
-<br><br>
+<br><br><br>
 
 <img align="center" alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
 
-<br><br>
+<br><br><br>
 
 <a href="https://www.instagram.com/felipecard0so/" target="_blank">
   <img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white">
@@ -29,7 +29,7 @@
   <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white">
 </a>
 
-<br><br>
+<br><br><br>
 
 ![Snake animation](https://raw.githubusercontent.com/FelipeCard0so/FelipeCard0so/output/github-contribution-grid-snake-dark.svg)
 
