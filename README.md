@@ -32,7 +32,14 @@
 ---
 
 ## ⚡ Tech Stack
+<div align="center">
 
+![Python](https://img.shields.io/badge/Python-1a1a2e?style=for-the-badge&logo=python&logoColor=e94560)
+![HTML5](https://img.shields.io/badge/HTML5-1a1a2e?style=for-the-badge&logo=html5&logoColor=e94560)
+![Markdown](https://img.shields.io/badge/Markdown-1a1a2e?style=for-the-badge&logo=markdown&logoColor=e94560)
+![Git](https://img.shields.io/badge/Git-1a1a2e?style=for-the-badge&logo=git&logoColor=e94560)
+
+</div>
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-1a1a2e?style=for-the-badge&logo=python&logoColor=d4a017)
