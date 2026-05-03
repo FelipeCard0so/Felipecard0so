@@ -75,9 +75,9 @@
 
 <div align="center">
 
-[![Instagram](https://img.shields.io/badge/Instagram-d4a017?style=for-the-badge&logo=instagram&logoColor=1a1a2e)](https://www.instagram.com/felipecard0so/)
+[![Instagram](https://img.shields.io/badge/Instagram-d4a017?style=for-the-badge&logo=instagram&logoColor=1a1a2e)](https://www.instagram.com/biodesigncv)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0f3460?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cardosofelipe/)
-[![Gmail](https://img.shields.io/badge/Gmail-1a1a2e?style=for-the-badge&logo=gmail&logoColor=d4a017)](mailto:felipe@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-1a1a2e?style=for-the-badge&logo=gmail&logoColor=d4a017)](mailto:felipecardoso.35@gmail.com)
 
 </div>
 
