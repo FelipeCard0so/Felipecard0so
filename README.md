@@ -32,14 +32,7 @@
 ---
 
 ## ⚡ Tech Stack
-<div align="center">
 
-![Python](https://img.shields.io/badge/Python-1a1a2e?style=for-the-badge&logo=python&logoColor=e94560)
-![HTML5](https://img.shields.io/badge/HTML5-1a1a2e?style=for-the-badge&logo=html5&logoColor=e94560)
-![Markdown](https://img.shields.io/badge/Markdown-1a1a2e?style=for-the-badge&logo=markdown&logoColor=e94560)
-![Git](https://img.shields.io/badge/Git-1a1a2e?style=for-the-badge&logo=git&logoColor=e94560)
-
-</div>
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-1a1a2e?style=for-the-badge&logo=python&logoColor=d4a017)
@@ -52,6 +45,13 @@
 ---
 
 ## 📊 GitHub Stats
+<div align="center">
+
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=FelipeCard0so&show_icons=true&theme=radical&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=e94560&icon_color=e94560&text_color=a8b2d8&ring_color=e94560" />
+  
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FelipeCard0so&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=e94560&text_color=a8b2d8&langs_count=6" />
+
+</div>
 
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=FelipeCard0so&theme=transparent&hide_border=true&ring=d4a017&fire=d4a017&currStreakLabel=d4a017&sideLabels=a8b2d8&dates=a8b2d8&currStreakNum=ffffff&sideNums=ffffff&stroke=d4a017" height="160em"/>
