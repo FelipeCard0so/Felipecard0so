@@ -81,6 +81,16 @@
 
 </div>
 
+<div align="center">
+  <a href="https://github.com/FelipeCard0so">
+    <img width="400px" src="https://github-readme-stats.vercel.app/api?username=FelipeCard0so&show_icons=true&theme=merko&include_all_commits=true&count_private=true"/>
+  </a>
+  <br/> 
+  <a href="https://github.com/FelipeCard0so">
+    <img width="400px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=FelipeCard0so&layout=compact&langs_count=7&theme=merko"/>
+  </a>
+</div>
+
 <!-- Footer -->
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0,1a1a2e,16213e,0f3460&height=120&section=footer" />
