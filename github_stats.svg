@@ -1,0 +1,70 @@
+<svg width="495" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#d4a017"  stop-opacity="1"/>
+      <stop offset="100%" stop-color="#f0c040" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="495" height="200" rx="10" fill="#0d1117"/>
+  <rect x="1" y="1" width="493" height="198" rx="10" fill="none"
+        stroke="#d4a017" stroke-width="0.8" stroke-opacity="0.4"/>
+  <rect width="495" height="3" rx="1.5" fill="url(#g1)"/>
+
+  <text x="25" y="40" font-size="15" fill="#d4a017"
+        font-family="'Courier New',monospace" font-weight="bold">
+    Felipe Cardoso — GitHub Stats
+  </text>
+  <line x1="25" y1="52" x2="470" y2="52"
+        stroke="#d4a017" stroke-width="0.5" stroke-opacity="0.35"/>
+
+  
+  <!-- Stars -->
+  <g transform="translate(35,63) scale(0.75)">
+    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#d4a017" />
+  </g>
+  <text x="59" y="77" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">1</text>
+  <text x="59" y="95" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Stars</text>
+  <!-- Commits -->
+  <g transform="translate(170,63) scale(0.75)">
+    <path d="M9 3H7v4H3v2h4v10h2V9h4V7H9V3zm8 8h-2v2h-2v2h2v4h2v-4h2v-2h-2v-2z" fill="#d4a017" />
+  </g>
+  <text x="194" y="77" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">113</text>
+  <text x="194" y="95" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Commits</text>
+  <!-- Pull Requests -->
+  <g transform="translate(305,63) scale(0.75)">
+    <path d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" fill="#d4a017" />
+  </g>
+  <text x="329" y="77" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">2</text>
+  <text x="329" y="95" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Pull Requests</text>
+  <!-- Issues -->
+  <g transform="translate(35,123) scale(0.75)">
+    <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z" fill="#d4a017" />
+  </g>
+  <text x="59" y="137" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">0</text>
+  <text x="59" y="155" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Issues</text>
+  <!-- Repositórios -->
+  <g transform="translate(170,123) scale(0.75)">
+    <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm0 4h18v2H3v-2z" fill="#d4a017" />
+  </g>
+  <text x="194" y="137" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">10</text>
+  <text x="194" y="155" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Repositórios</text>
+  <!-- Seguidores -->
+  <g transform="translate(305,123) scale(0.75)">
+    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z" fill="#d4a017" />
+  </g>
+  <text x="329" y="137" font-size="18" fill="#ffffff"
+        font-family="'Courier New',monospace" font-weight="bold">29</text>
+  <text x="329" y="155" font-size="11" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Seguidores</text>
+</svg>
