@@ -7,13 +7,16 @@ on:
   push:
     branches: [main, master]
     paths:
-      - generate_stats.py  # re-roda se editar o script
+      - generate_stats.py
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # usa Node.js 24 agora
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # necessário para commitar os SVGs de volta
+      contents: write
 
     steps:
       - name: Checkout do repositório
