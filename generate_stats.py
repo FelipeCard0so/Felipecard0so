@@ -180,9 +180,9 @@ def make_langs_svg(langs):
         bar_width = max(int(lang["pct"] / 100 * 430), 8)
 
         bars.append(f"""
-  <text x="28" y="{y}" font-size="15" fill="{TEXT}"
+  <text x="28" y="{y}" font-size="17" fill="{TEXT}"
         font-family="'Courier New',monospace">{lang['name']}</text>
-  <text x="488" y="{y}" font-size="15" fill="{GOLD}"
+  <text x="488" y="{y}" font-size="17" fill="{GOLD}"
         font-family="'Courier New',monospace" text-anchor="end">{lang['pct']}%</text>
   <rect x="28" y="{y + 8}" width="460" height="10" rx="5" fill="{BORDER}"/>
   <rect x="28" y="{y + 8}" width="{bar_width}" height="10" rx="5" fill="{bar_fill}"/>""")
