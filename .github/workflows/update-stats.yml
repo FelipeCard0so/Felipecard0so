@@ -1,0 +1,44 @@
+name: 📊 Atualizar Cards de Stats
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # todo dia às 06h UTC (03h Brasília)
+  workflow_dispatch:       # permite rodar manualmente pelo GitHub
+  push:
+    branches: [main, master]
+    paths:
+      - generate_stats.py  # re-roda se editar o script
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write      # necessário para commitar os SVGs de volta
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependências
+        run: pip install requests
+
+      - name: Gerar os cards SVG
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_stats.py
+
+      - name: Commitar e publicar os SVGs
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add github_stats.svg top_langs.svg
+          git diff --staged --quiet \
+            || git commit -m "📊 Atualizar cards de stats [skip ci]"
+          git push
