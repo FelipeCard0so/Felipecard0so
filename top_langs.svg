@@ -19,15 +19,15 @@
         stroke="#d4a017" stroke-width="0.6" stroke-opacity="0.4"/>
 
   
-  <text x="28" y="90" font-size="15" fill="#a8b2d8"
+  <text x="28" y="90" font-size="17" fill="#a8b2d8"
         font-family="'Courier New',monospace">Python</text>
-  <text x="488" y="90" font-size="15" fill="#d4a017"
+  <text x="488" y="90" font-size="17" fill="#d4a017"
         font-family="'Courier New',monospace" text-anchor="end">77.5%</text>
   <rect x="28" y="98" width="460" height="10" rx="5" fill="#21262d"/>
   <rect x="28" y="98" width="333" height="10" rx="5" fill="#3572A5"/>
-  <text x="28" y="132" font-size="15" fill="#a8b2d8"
+  <text x="28" y="132" font-size="17" fill="#a8b2d8"
         font-family="'Courier New',monospace">HTML</text>
-  <text x="488" y="132" font-size="15" fill="#d4a017"
+  <text x="488" y="132" font-size="17" fill="#d4a017"
         font-family="'Courier New',monospace" text-anchor="end">22.5%</text>
   <rect x="28" y="140" width="460" height="10" rx="5" fill="#21262d"/>
   <rect x="28" y="140" width="96" height="10" rx="5" fill="#e34c26"/>
