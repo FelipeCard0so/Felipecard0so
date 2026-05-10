@@ -86,7 +86,6 @@ def fetch_stats():
         "followers": user["followers"]["totalCount"],
     }
 
-    # Agrega tamanho de linguagens entre todos os repos
     lang_map = {}
     for repo in repos:
         for edge in repo["languages"]["edges"]:
@@ -113,43 +112,42 @@ def fetch_stats():
 # ── Gera SVG: Stats Card ────────────────────────────────────────────────────────
 def make_stats_svg(stats):
     items = [
-        ("*", "Stars",        str(stats["stars"])),
-        ("#", "Commits",      str(stats["commits"])),
-        ("~", "Pull Requests",str(stats["prs"])),
-        ("!", "Issues",       str(stats["issues"])),
-        ("@", "Repositórios", str(stats["repos"])),
-        ("+", "Seguidores",   str(stats["followers"])),
+        ("star",      "Stars",         str(stats["stars"])),
+        ("commits",   "Commits",       str(stats["commits"])),
+        ("prs",       "Pull Requests", str(stats["prs"])),
+        ("issues",    "Issues",        str(stats["issues"])),
+        ("repos",     "Repositórios",  str(stats["repos"])),
+        ("followers", "Seguidores",    str(stats["followers"])),
     ]
 
-    # Ícones SVG simples para cada item
-    icons = {
-        "*": "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
-        "#": "M9 3H7v4H3v2h4v10h2V9h4V7H9V3zm8 8h-2v2h-2v2h2v4h2v-4h2v-2h-2v-2z",
-        "~": "M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3",
-        "!": "M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z",
-        "@": "M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm0 4h18v2H3v-2z",
-        "+": "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z",
+    # Ícones SVG para cada métrica
+    icon_paths = {
+        "star":      "M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z",
+        "commits":   "M9 3H7v4H3v2h4v10h2V9h4V7H9V3zm8 8h-2v2h-2v2h2v4h2v-4h2v-2h-2v-2z",
+        "prs":       "M6 3a3 3 0 110 6 3 3 0 010-6zm12 0a3 3 0 110 6 3 3 0 010-6zM6 7a1 1 0 100-2 1 1 0 000 2zm12 0a1 1 0 100-2 1 1 0 000 2zm-1 3v7l-2-2-2 2V10H17zM7 10v2a5 5 0 005 5h1v2h-1a7 7 0 01-7-7v-2h2z",
+        "issues":    "M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z",
+        "repos":     "M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm0 4h18v2H3v-2z",
+        "followers": "M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z",
     }
 
     cells = []
     for i, (key, label, value) in enumerate(items):
         col = i % 3
         row = i // 3
-        cx  = 55  + col * 135
-        cy  = 85  + row * 60
-        path = icons[key]
+        cx  = 70  + col * 150
+        cy  = 105 + row * 75
+        path = icon_paths[key]
 
         cells.append(f"""
-  <!-- {label} -->
-  <g transform="translate({cx - 20},{cy - 22}) scale(0.75)">
+  <g transform="translate({cx - 26},{cy - 28}) scale(0.9)">
     <path d="{path}" fill="{GOLD}" />
   </g>
-  <text x="{cx + 4}" y="{cy - 8}" font-size="18" fill="{WHITE}"
+  <text x="{cx + 6}" y="{cy - 6}" font-size="24" fill="{WHITE}"
         font-family="'Courier New',monospace" font-weight="bold">{value}</text>
-  <text x="{cx + 4}" y="{cy + 10}" font-size="11" fill="{TEXT}"
+  <text x="{cx + 6}" y="{cy + 16}" font-size="14" fill="{TEXT}"
         font-family="'Courier New',monospace">{label}</text>""")
 
-    return f"""<svg width="495" height="200" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="520" height="230" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="{GOLD}"  stop-opacity="1"/>
@@ -157,17 +155,17 @@ def make_stats_svg(stats):
     </linearGradient>
   </defs>
 
-  <rect width="495" height="200" rx="10" fill="{BG}"/>
-  <rect x="1" y="1" width="493" height="198" rx="10" fill="none"
-        stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-  <rect width="495" height="3" rx="1.5" fill="url(#g1)"/>
+  <rect width="520" height="230" rx="12" fill="{BG}"/>
+  <rect x="1" y="1" width="518" height="228" rx="12" fill="none"
+        stroke="{GOLD}" stroke-width="1" stroke-opacity="0.5"/>
+  <rect width="520" height="4" rx="2" fill="url(#g1)"/>
 
-  <text x="25" y="40" font-size="15" fill="{GOLD}"
+  <text x="28" y="50" font-size="18" fill="{GOLD}"
         font-family="'Courier New',monospace" font-weight="bold">
     Felipe Cardoso — GitHub Stats
   </text>
-  <line x1="25" y1="52" x2="470" y2="52"
-        stroke="{GOLD}" stroke-width="0.5" stroke-opacity="0.35"/>
+  <line x1="28" y1="64" x2="492" y2="64"
+        stroke="{GOLD}" stroke-width="0.6" stroke-opacity="0.4"/>
 
   {"".join(cells)}
 </svg>"""
@@ -176,23 +174,23 @@ def make_stats_svg(stats):
 # ── Gera SVG: Top Languages Card ────────────────────────────────────────────────
 def make_langs_svg(langs):
     bars = []
-    y = 78
+    y = 90
     for lang in langs:
         bar_fill  = lang["color"] if lang["color"] else GOLD
-        bar_width = max(int(lang["pct"] / 100 * 420), 6)
+        bar_width = max(int(lang["pct"] / 100 * 430), 8)
 
         bars.append(f"""
-  <text x="25" y="{y}" font-size="12" fill="{TEXT}"
+  <text x="28" y="{y}" font-size="15" fill="{TEXT}"
         font-family="'Courier New',monospace">{lang['name']}</text>
-  <text x="465" y="{y}" font-size="12" fill="{GOLD}"
+  <text x="488" y="{y}" font-size="15" fill="{GOLD}"
         font-family="'Courier New',monospace" text-anchor="end">{lang['pct']}%</text>
-  <rect x="25" y="{y + 6}" width="440" height="8" rx="4" fill="{BORDER}"/>
-  <rect x="25" y="{y + 6}" width="{bar_width}" height="8" rx="4" fill="{bar_fill}"/>""")
-        y += 34
+  <rect x="28" y="{y + 8}" width="460" height="10" rx="5" fill="{BORDER}"/>
+  <rect x="28" y="{y + 8}" width="{bar_width}" height="10" rx="5" fill="{bar_fill}"/>""")
+        y += 42
 
-    height = 58 + len(langs) * 34 + 18
+    height = 68 + len(langs) * 42 + 20
 
-    return f"""<svg width="495" height="{height}" xmlns="http://www.w3.org/2000/svg">
+    return f"""<svg width="520" height="{height}" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="{GOLD}"  stop-opacity="1"/>
@@ -200,17 +198,17 @@ def make_langs_svg(langs):
     </linearGradient>
   </defs>
 
-  <rect width="495" height="{height}" rx="10" fill="{BG}"/>
-  <rect x="1" y="1" width="493" height="{height - 2}" rx="10" fill="none"
-        stroke="{GOLD}" stroke-width="0.8" stroke-opacity="0.4"/>
-  <rect width="495" height="3" rx="1.5" fill="url(#g2)"/>
+  <rect width="520" height="{height}" rx="12" fill="{BG}"/>
+  <rect x="1" y="1" width="518" height="{height - 2}" rx="12" fill="none"
+        stroke="{GOLD}" stroke-width="1" stroke-opacity="0.5"/>
+  <rect width="520" height="4" rx="2" fill="url(#g2)"/>
 
-  <text x="25" y="40" font-size="15" fill="{GOLD}"
+  <text x="28" y="50" font-size="18" fill="{GOLD}"
         font-family="'Courier New',monospace" font-weight="bold">
     Linguagens Mais Usadas
   </text>
-  <line x1="25" y1="52" x2="470" y2="52"
-        stroke="{GOLD}" stroke-width="0.5" stroke-opacity="0.35"/>
+  <line x1="28" y1="64" x2="492" y2="64"
+        stroke="{GOLD}" stroke-width="0.6" stroke-opacity="0.4"/>
 
   {"".join(bars)}
 </svg>"""
