@@ -30,14 +30,14 @@
     <path d="M9 3H7v4H3v2h4v10h2V9h4V7H9V3zm8 8h-2v2h-2v2h2v4h2v-4h2v-2h-2v-2z" fill="#d4a017" />
   </g>
   <text x="226" y="99" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">131</text>
+        font-family="'Courier New',monospace" font-weight="bold">138</text>
   <text x="226" y="121" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Commits</text>
   <g transform="translate(344,77) scale(0.9)">
     <path d="M6 3a3 3 0 110 6 3 3 0 010-6zm12 0a3 3 0 110 6 3 3 0 010-6zM6 7a1 1 0 100-2 1 1 0 000 2zm12 0a1 1 0 100-2 1 1 0 000 2zm-1 3v7l-2-2-2 2V10H17zM7 10v2a5 5 0 005 5h1v2h-1a7 7 0 01-7-7v-2h2z" fill="#d4a017" />
   </g>
   <text x="376" y="99" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">2</text>
+        font-family="'Courier New',monospace" font-weight="bold">3</text>
   <text x="376" y="121" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Pull Requests</text>
   <g transform="translate(44,152) scale(0.9)">
