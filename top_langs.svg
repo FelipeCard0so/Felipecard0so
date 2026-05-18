@@ -20,15 +20,15 @@
 
   
   <text x="28" y="90" font-size="17" fill="#a8b2d8"
-        font-family="'Courier New',monospace">Python</text>
-  <text x="488" y="90" font-size="17" fill="#d4a017"
-        font-family="'Courier New',monospace" text-anchor="end">76.5%</text>
-  <rect x="28" y="98" width="460" height="10" rx="5" fill="#21262d"/>
-  <rect x="28" y="98" width="328" height="10" rx="5" fill="#3572A5"/>
-  <text x="28" y="132" font-size="17" fill="#a8b2d8"
         font-family="'Courier New',monospace">HTML</text>
+  <text x="488" y="90" font-size="17" fill="#d4a017"
+        font-family="'Courier New',monospace" text-anchor="end">50.7%</text>
+  <rect x="28" y="98" width="460" height="10" rx="5" fill="#21262d"/>
+  <rect x="28" y="98" width="218" height="10" rx="5" fill="#e34c26"/>
+  <text x="28" y="132" font-size="17" fill="#a8b2d8"
+        font-family="'Courier New',monospace">Python</text>
   <text x="488" y="132" font-size="17" fill="#d4a017"
-        font-family="'Courier New',monospace" text-anchor="end">23.5%</text>
+        font-family="'Courier New',monospace" text-anchor="end">49.3%</text>
   <rect x="28" y="140" width="460" height="10" rx="5" fill="#21262d"/>
-  <rect x="28" y="140" width="101" height="10" rx="5" fill="#e34c26"/>
+  <rect x="28" y="140" width="211" height="10" rx="5" fill="#3572A5"/>
 </svg>

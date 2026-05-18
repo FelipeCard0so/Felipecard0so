@@ -23,21 +23,21 @@
     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" fill="#d4a017" />
   </g>
   <text x="76" y="99" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">1</text>
+        font-family="'Courier New',monospace" font-weight="bold">2</text>
   <text x="76" y="121" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Stars</text>
   <g transform="translate(194,77) scale(0.9)">
     <path d="M9 3H7v4H3v2h4v10h2V9h4V7H9V3zm8 8h-2v2h-2v2h2v4h2v-4h2v-2h-2v-2z" fill="#d4a017" />
   </g>
   <text x="226" y="99" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">138</text>
+        font-family="'Courier New',monospace" font-weight="bold">151</text>
   <text x="226" y="121" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Commits</text>
   <g transform="translate(344,77) scale(0.9)">
     <path d="M6 3a3 3 0 110 6 3 3 0 010-6zm12 0a3 3 0 110 6 3 3 0 010-6zM6 7a1 1 0 100-2 1 1 0 000 2zm12 0a1 1 0 100-2 1 1 0 000 2zm-1 3v7l-2-2-2 2V10H17zM7 10v2a5 5 0 005 5h1v2h-1a7 7 0 01-7-7v-2h2z" fill="#d4a017" />
   </g>
   <text x="376" y="99" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">3</text>
+        font-family="'Courier New',monospace" font-weight="bold">4</text>
   <text x="376" y="121" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Pull Requests</text>
   <g transform="translate(44,152) scale(0.9)">
@@ -51,7 +51,7 @@
     <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h12v2H3v-2zm0 4h12v2H3v-2zm0 4h18v2H3v-2z" fill="#d4a017" />
   </g>
   <text x="226" y="174" font-size="24" fill="#ffffff"
-        font-family="'Courier New',monospace" font-weight="bold">10</text>
+        font-family="'Courier New',monospace" font-weight="bold">11</text>
   <text x="226" y="196" font-size="14" fill="#a8b2d8"
         font-family="'Courier New',monospace">Repositórios</text>
   <g transform="translate(344,152) scale(0.9)">
